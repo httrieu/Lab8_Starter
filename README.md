@@ -4,3 +4,6 @@
 
 2) yes
 
+3) No, there are too many different messages and features associated with it. Unit tests are meant to check functionality and edge cases, not necessarily an entire feature. It might be better to split this up into multiple different unit tests to test the different features.
+
+4) Yes, this can be an easy edge case to test using a unit test. Just make a message with over 80 characters and test it.
