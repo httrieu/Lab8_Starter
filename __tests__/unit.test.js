@@ -23,6 +23,11 @@ test('check invalid phone numbers 2', () => {
     expect(functions.isPhoneNumber("123asd")).toBe(false)
 });
 
+test('check invalid phone numbers 3', () => {
+    // TODO
+    expect(functions.isPhoneNumber("ba;sjf;kja;")).toBe(false)
+})
+
 test('check valid email 1', () => {
     // TODO
     expect(functions.isEmail("httriew@ucsd.edu")).toBe(true)
