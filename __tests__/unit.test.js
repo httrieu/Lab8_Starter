@@ -48,6 +48,10 @@ test('check invalid email 2', () => {
     expect(functions.isEmail("httriewucsd.wrong")).toBe(false)
 });
 
+test('check invalid email 3', () =>{
+    expect(functions.isEmail("httriew.wrong")).toBe(false)
+});
+
 test('check if strong password 1', () => {
     // TODO
     expect(functions.isStrongPassword("strongPassword")).toBe(true)
@@ -88,6 +92,10 @@ test('check if invalid date 2', () => {
     expect(functions.isDate("234/21/3245")).toBe(false)
 });
 
+test('check if invalid date 3', () => {
+    expect(functions.isDate("12/144/2000")).toBe(false)
+});
+
 test('check if valid hex code 1', () => {
     // TODO
     expect(functions.isHexColor("#CD5C5C")).toBe(true)
@@ -107,3 +115,8 @@ test('check if invalid hex code 2', () => {
     // TODO
     expect(functions.isHexColor("#0232133")).toBe(false)
 });
+
+test('check if invalid hex code 3', () => {
+    // TODO
+    expect(functions.isHexColor("#0")).toBe(false)
+})
